@@ -1,0 +1,8 @@
+# Jangan upload file konfigurasi sensitif
+.env
+
+# Folder dari Node.js
+node_modules
+
+# Log file
+*.log
