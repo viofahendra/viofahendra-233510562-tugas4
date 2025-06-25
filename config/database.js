@@ -13,3 +13,9 @@ const db = new Sequelize(
   });
 
 export default db;
+
+db.sync().then(() => {
+  console.log("✅ Database synced");
+}).catch((err) => {
+  console.error("❌ Failed to sync DB:", err);
+});
